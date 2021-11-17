@@ -1,0 +1,21 @@
+<table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+        <th>Cable Details</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <%
+        for (CPDefinitionSpecificationOptionValue item : cableDetailsItems) {
+            CPSpecificationOption cpSpecificationOption = item.getCPSpecificationOption();
+    %>
+    <tr>
+        <td><%= HtmlUtil.escape(cpSpecificationOption.getTitle(languageId)) %></td>
+        <td><%= HtmlUtil.escape(item.getValue(languageId)) %></td>
+    </tr>
+    <%
+        }
+    %>
+    </tbody>
+</table>

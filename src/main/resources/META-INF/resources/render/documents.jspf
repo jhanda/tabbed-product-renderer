@@ -1,0 +1,26 @@
+<dl class="specification-list">
+    <%
+        int attachmentsCount = 0;
+        for (CPMedia curCPAttachmentFileEntry : cpAttachmentFileEntries) {
+    %>
+
+    <dt class="specification-term">
+        <%= HtmlUtil.escape(curCPAttachmentFileEntry.getTitle()) %>
+    </dt>
+    <dd class="specification-desc">
+        <aui:icon cssClass="icon-monospaced" image="download" markupView="lexicon" target="_blank" url="<%= curCPAttachmentFileEntry.getDownloadUrl() %>" />
+    </dd>
+
+        <%
+            attachmentsCount = attachmentsCount + 1;
+            if (attachmentsCount >= 2) {
+        %>
+
+    <dt class="specification-empty specification-term"></dt>
+    <dd class="specification-desc specification-empty"></dd>
+
+<%
+            attachmentsCount = 0;
+        }
+    }
+%>

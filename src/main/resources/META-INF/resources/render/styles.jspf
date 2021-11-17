@@ -1,0 +1,46 @@
+<style>
+    table dt {
+        text-align: center;
+    }
+
+    table dd {
+        text-align: center;
+    }
+
+    .product-info {
+        display: flex;
+        align-items: center;
+    }
+    .product-info__img img {
+        margin-right: 15px;
+        height: 55px;
+        width: 55px;
+        /*border-radius: 45px;*/
+        border: 3px solid #fff;
+        box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+    }
+
+    .product-numbers {
+        float: right;
+    }
+    .progress {
+        margin-bottom: 1rem;
+        /*margin-top: -1rem;*/
+        /*margin-right: -.9rem;*/
+        /*margin-left: -1.6em;*/
+    }
+
+    .bg-yellow {
+        background-color: #f3f309;
+    }
+
+    .flex-container{
+        display: inline-flex;
+    }
+
+    .flex-child {
+        flex: 1;
+        border: 2px solid yellow;
+    }
+
+</style>

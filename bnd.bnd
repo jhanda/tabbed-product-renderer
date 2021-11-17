@@ -1,0 +1,4 @@
+Bundle-Name: tabbed-renderer
+Bundle-SymbolicName: com.liferay.commerce.demo.tabbed.renderer
+Bundle-Version: 1.0.0
+Web-ContextPath: /tabbed-renderer
